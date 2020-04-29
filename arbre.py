@@ -11,7 +11,9 @@ class ArbreBinaire:
     def setValue(self,val):
         self.value = val
 
+    def str(self):
+        print("Noeud = " + str(self.value) + " noeud gauche = " + str(self.noeudGauche) + " noeud droit = " + str(self.noeudDroit))
+
 bernard = ArbreBinaire()
 bernard.setValue(1)
-
-print(bernard.getValue())
+bernard.str()
