@@ -14,6 +14,14 @@ class TestArbreBinaire:
     def str(self):
         print("Noeud = " + str(self.value) + " noeud gauche = " + str(self.noeudGauche) + " noeud droit = " + str(self.noeudDroit))
 
+    def prefixe(self):
+        if self.value == 0:
+            return False
+        else:
+            print(self.value)
+
+        
 bernard = TestArbreBinaire()
 bernard.setValue(1)
 bernard.str()
+bernard.prefixe()
