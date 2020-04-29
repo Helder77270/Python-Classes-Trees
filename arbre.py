@@ -1,4 +1,4 @@
-class ArbreBinaire:
+class TestArbreBinaire:
     value = 0
     noeudGauche = 0
     noeudDroit = 0
@@ -14,6 +14,6 @@ class ArbreBinaire:
     def str(self):
         print("Noeud = " + str(self.value) + " noeud gauche = " + str(self.noeudGauche) + " noeud droit = " + str(self.noeudDroit))
 
-bernard = ArbreBinaire()
+bernard = TestArbreBinaire()
 bernard.setValue(1)
 bernard.str()
