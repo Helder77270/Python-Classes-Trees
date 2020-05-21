@@ -15,11 +15,11 @@ Frame2 = Frame(fen1)
 
 def getScoresFromFile():
     file = open("score.txt",'r')
-    line = "x"
-    while line:
-        line = file.readlines()
-        print(line)
-        Label(Frame2,text=line, font="arial")
+    line = file.readlines()
+    for lines in line:
+
+        print(lines)
+        Label(Frame2,textvariable=lines).pack()
 
 label = Label(Frame2,text = "Score")
 namefield = Entry(Frame2, justify = CENTER, relief="solid", borderwidth = 2)
