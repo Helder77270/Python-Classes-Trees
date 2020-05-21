@@ -34,7 +34,7 @@ def getScoresFromFile():
         sortedScores.append(line[i].split(","))
         sortedScores[i][1] = int(sortedScores[i][1])
         i = i+1
-    sortedScores = sorted(sortedScores, key= lambda colonnes: colonnes[1])
+    sortedScores = sorted(sortedScores, key= lambda score: score[1])
 
     i=0
 
