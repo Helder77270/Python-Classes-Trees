@@ -17,9 +17,8 @@ def getScoresFromFile():
     file = open("score.txt",'r')
     line = file.readlines()
     for lines in line:
-
-        print(lines)
-        Label(Frame2,textvariable=lines).pack()
+        print(lines[:-1])
+        Label(Frame2,textvariable=lines[:-1]).pack()
 
 label = Label(Frame2,text = "Score")
 namefield = Entry(Frame2, justify = CENTER, relief="solid", borderwidth = 2)
